@@ -9,16 +9,6 @@
 
 ---
 
-## 📁 檔案結構
-
-```
-packet_analyzer/
-├── packet_analyzer.py   # 主程式（需 root / Scapy）
-├── demo_report.py       # Demo 模擬展示（無需 root）
-└── README.md
-```
-
----
 
 ## ⚙️ 安裝需求
 
@@ -62,15 +52,11 @@ ip addr show <介面名稱>
 ifconfig <介面名稱>
 ```
 
-> ⚠️ **過濾 IP 前務必確認本機環境的實際 IP**，否則封包數會是 0（這是正常行為，不是程式錯誤）。
-
 ### 步驟 3：開始擷取
 
 ```bash
 # 擷取所有流量（10 秒）
 sudo python3 packet_analyzer.py -i <介面名稱>
-
-# 無需 root 的 Demo 模式
 python3 demo_report.py
 ```
 
@@ -78,7 +64,7 @@ python3 demo_report.py
 
 ## 📖 使用範例
 
-> 下方範例中的 IP（`203.0.113.x`）為 [RFC 5737](https://datatracker.ietf.org/doc/html/rfc5737) 文件保留位址，請替換成你環境的實際 IP。
+> 下方範例中的 IP 請替換成你環境的實際 IP。
 
 ### 過濾協定
 ```bash
