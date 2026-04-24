@@ -160,6 +160,7 @@ sudo python3 packet_analyzer.py -i <介面名稱> -q -t 30
 - Top N 來源 IP / 目的 IP
 - Top N 目的 Port（自動顯示 HTTP / HTTPS / SSH / DNS 等服務名稱）
 
+![image](https://github.com/xuanxxx2002/Packet-Sniffing-Python/blob/main/image.png)
 ---
 
 ## 🔧 CLI 參數一覽
